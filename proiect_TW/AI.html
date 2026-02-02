@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AI</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+			
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+                line-height: 1.5;
+            }
+
+            header {
+                position: relative;
+                width: 100%;
+                height: 400px;
+                background: linear-gradient(135deg, #3498db, #2c3e50);
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                box-shadow: 0 1px 1px black;
+            }
+
+            header h1 {
+                font-size: 48px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-shadow: 1px 1px 4px black;
+            }
+
+            header p {
+                font-size: 20px;
+                margin-top: 10px;
+                font-weight: 300;
+				text-shadow: 1px 1px 4px black;
+            }
+
+            h4 {
+                color: black;
+                margin: 20px 0;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            label {
+                font-size: 16px;
+                color: black;
+                display: block;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .search-container {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+            }
+
+            #text1 {
+                width: 60%;
+                padding: 15px;
+                font-size: 16px;
+				border: 0px;
+                border-radius: 8px;
+            }
+
+            .item-list {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            .item {
+                background-color:white;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                display: flex;
+                align-items: center;
+	            }
+
+            .item img {
+                width: 150px;
+                height: 150px;
+                border-radius: 8px;
+                margin-right: 20px;
+            }
+			
+            .item.hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Artificial Intelligence</h1>
+                <p>AI represents the future of innovation, technology, and creativity.</p>
+            </div>
+        </header>
+        <h4>Creators and Geniuses</h4>
+        <label for="text1">Search</label>
+        <div class="search-container">
+            <input type="text" id="text1" placeholder="Search your creator...">
+        </div>
+        <ul class="item-list" id="itemList">
+            <li class="item"> 
+                    <img src="sh_img.avif" alt="Superhuman">
+                    <p>Superhuman</p>
+            </li>
+            <li class="item">
+                <img src="AM.jfif" alt="Allie K. Miller">
+                <p>Allie K. Miller</p>
+            </li>
+            <li class="item">
+                <img src="MW.jpg" alt="Matt Wolfe">
+                <p>Matt Wolfe</p>
+            </li>
+            <li class="item">
+                <img src="as.jfif" alt="Alpha Signal">
+                <p>Alpha Signal</p>
+            </li>
+            <li class="item">
+                <img src="BB.jfif" alt="Ben's Bites">
+                <p>Ben's Bites</p>
+            </li>
+            <li class="item">
+                <img src="BN.jpg" alt="Brand Nat">
+                <p>Brand Nat</p>
+            </li>
+            <li class="item">
+                <img src="SM.jfif" alt="Michael Spencer">
+                <p>Michael Spencer</p>
+            </li>
+            <li class="item">
+                <img src="SD.avif" alt="Superpower Daily">
+                <p>Superpower Daily</p>
+            </li>
+            <li class="item">
+                <img src="PD.avif" alt="Prompts Daily">
+                <p>Prompts Daily</p>
+            </li>
+            <li class="item">
+                <img src="ASr.webp" alt="Aishwarya Srinivasan">
+                <p>Aishwarya Srinivasan</p>
+            </li>
+        </ul>
+
+        <script>
+            const text1 = document.getElementById('text1');
+            const items = document.querySelectorAll('.item');
+
+            function search() {
+                const searchText = text1.value.toLowerCase();
+                items.forEach(item => {
+                    const itemText = item.textContent.toLowerCase();
+                    if (itemText.includes(searchText)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+            }
+
+            text1.addEventListener('input', search);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            color: black;
+            text-align: center;
+        }
+
+        header {
+            padding: 1rem 0;
+        }
+        .top{
+            background-color: white;
+            padding: 0.1px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 0 2rem;
+        }
+
+        .category {
+            margin-bottom: 3rem;
+        }
+
+        .category h2 {
+            margin-bottom: 1rem;
+        }
+
+        .laptop-card {
+            background-color: white;
+            box-shadow: 0 2px 4px black;
+            border-radius: 8px;
+            overflow: hidden;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.5s ease;
+        }
+        .laptop-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .laptop-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .laptop-card h3 {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laptops</h1>
+    </header>
+    <div class="top">
+        <h2 style="text-align: center;">BEST ON MARKET:</h2>
+    </div>
+    <main>
+        <section class="category">
+            <h2>Asus</h2>
+            <div class="container">
+                <div class="laptop-card">
+                    <img src="zephyrus_g14avif.avif" alt="Asus Laptop 1">
+                    <h3>Asus ROG Zephyrus G14</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="zenbook_s_13.avif" alt="Asus Laptop 2">
+                    <h3>Asus ZenBook 13</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="asus_vivobook_s_15.avif" alt="Asus Laptop 3">
+                    <h3>Asus VivoBook S15</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="2022-ASUS-TUF-Dash-F15_FX517_negru_1.avif" alt="Asus Laptop 4">
+                    <h3>Asus TUF Dash F15</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Dell</h2>
+            <div class="container">
+                <div class="laptop-card">
+                    <img src="xps13.avif" alt="Dell Laptop 1">
+                    <h3>Dell XPS 13</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="dell_inspiron_15.avif" alt="Dell Laptop 2">
+                    <h3>Dell Inspiron 15</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="G15-5511-Grey_1.avif" alt="Dell Laptop 3">
+                    <h3>Dell G15 Gaming</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="notebook_inspiron_7420_nt_green_win11_bf39606c.avif" alt="Dell Laptop 4">
+                    <h3>Dell Latitude 7420</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Acer</h2>
+            <div class="container">
+                <div class="laptop-card">
+                    <img src="acer_aspire_5.avif" alt="Acer Laptop 1">
+                    <h3>Acer Aspire 5</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="acer.avif" alt="Acer Laptop 2">
+                    <h3>Acer Nitro 5</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="acer_predator_helios_300_ph315_55_win11_2d55bb86.avif" alt="Acer Laptop 3">
+                    <h3>Acer Predator Helios 300</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="acerswift.avif" alt="Acer Laptop 4">
+                    <h3>Acer Swift 3</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <h2>Lenovo</h2>
+            <div class="container">
+                <div class="laptop-card">
+                    <img src="lenovo_thinkpad_x1_carbon_gen_10_1_1ba74417.avif" alt="Lenovo Laptop 1">
+                    <h3>Lenovo ThinkPad X1 Carbon</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="IdeaPad_3_17ALC6_Arctic-Grey_1.avif" alt="Lenovo Laptop 2">
+                    <h3>Lenovo IdeaPad 3</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="lenovo_legion_5_pro_16arh7h_1_b56be484.avif" alt="Lenovo Laptop 3">
+                    <h3>Lenovo Legion 5 Pro</h3>
+                </div>
+                <div class="laptop-card">
+                    <img src="lenovo_yoga_9_14irp8_storm_grey_win11_0ca8b6d2.avif" alt="Lenovo Laptop 4">
+                    <h3>Lenovo Yoga 9i</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

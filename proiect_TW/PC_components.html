@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Components</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        }
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .top{
+            background-color: white;
+            padding: 0.1px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .category h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .component-card {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px black;
+            transition: transform 0.2s ease;
+        }
+        .component-card:hover {
+            transform: translateY(-5px);
+        }
+        .component-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .component-name {
+            margin-top: 10px;
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>PC Components</h1>
+    <div class="top">
+        <h2 style="text-align: center;">BEST ON MARKET:</h2>
+    </div>
+    <div class="container">
+        <div class="category">
+            <h2>Graphics Cards</h2>
+            <div class="grid">
+                <div class="component-card">
+                    <img src="4090.avif " alt="NVIDIA GeForce RTX 4090">
+                    <div class="component-name">NVIDIA GeForce RTX 4090</div>
+                </div>
+                <div class="component-card">
+                    <img src="4080.avif" alt="NVIDIA GeForce RTX 4080">
+                    <div class="component-name">NVIDIA GeForce RTX 4080</div>
+                </div>
+                <div class="component-card">
+                    <img src="7900xt.jpg" alt="AMD Radeon RX 7900 XTX">
+                    <div class="component-name">AMD Radeon RX 7900 XTX</div>
+                </div>
+                <div class="component-card">
+                    <img src="7900xtt.jpg" alt="AMD Radeon RX 7900 XT">
+                    <div class="component-name">AMD Radeon RX 7900 XT</div>
+                </div>
+                <div class="component-card">
+                    <img src="4070tis.avif" alt="NVIDIA GeForce RTX 4070 Ti SUPER">
+                    <div class="component-name">NVIDIA GeForce RTX 4070 Ti SUPER</div>
+                </div>
+                <div class="component-card">
+                    <img src="7800xt.avif" alt="AMD Radeon RX 7800 XT">
+                    <div class="component-name">AMD Radeon RX 7800 XT</div>
+                </div>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Processors</h2>
+            <div class="grid">
+                <div class="component-card">
+                    <img src="13900i9.avif" alt="Intel Core i9-13900">
+                    <div class="component-name">Intel Core i9-13900</div>
+                </div>
+                <div class="component-card">
+                    <img src="intel_core_i7_13t700.avif" alt="Intel Core i7-13700">
+                    <div class="component-name">Intel Core i7-13700</div>
+                </div>
+                <div class="component-card">
+                    <img src="amd_ryzen_9_7000.avif" alt="AMD Ryzen 9 7950X">
+                    <div class="component-name">AMD Ryzen 9 7950X</div>
+                </div>
+                <div class="component-card">
+                    <img src="amd_ryzen_9_7900.avif" alt="AMD Ryzen 9 7900X">
+                    <div class="component-name">AMD Ryzen 9 7900X</div>
+                </div>
+                <div class="component-card">
+                    <img src="amd_ryzen_7_7800.avif" alt="AMD Ryzen 7 7800X3D">
+                    <div class="component-name">AMD Ryzen 7 7800X3D</div>
+                </div>
+                <div class="component-card">
+                    <img src="intel_core_i5.avif" alt="Intel Core i5-13600K">
+                    <div class="component-name">Intel Core i5-13600K</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

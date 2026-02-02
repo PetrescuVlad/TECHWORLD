@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style_w.css">
+	<title> Tech World</title>
+</head>
+<body>
+    <header>    
+        <h1 class="title">TECHWORLD</h1>
+        <div class="login">
+            <p id="welcomeMessage"><p>
+            <button id="logoutButton" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <div class="content">
+    <div class="definition">
+        <h2>Ce reprezinta tehnologia?</h2>
+        <p>Tehnologia reprezintă aplicarea cunoștințelor științifice în scopuri practice, pentru a crea instrumente, mașini, tehnici și sisteme care îmbunătățesc viața oamenilor. De la computerele moderne la internet și inteligența artificială, tehnologia transformă lumea în moduri extraordinare.</p>
+    </div>
+    
+    <a href="AI.html" ><div class="box" >
+        <h2>AI - Inteligență Artificială</h2>
+        <p>Descoperă unii dintre cei mai cunoscuți creatori din domeniul AI.</p>
+    </div></a>
+    <a href="Gadgets.html"><div class="box">
+        <h2>Gadgets</h2>
+        <p>Rămâi la curent cu cele mai noi gadget-uri.</p>
+    </div></a>
+</div>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const username = params.get('username');
+    document.getElementById('welcomeMessage').textContent = `Salut, ${username}!`;
+    function logout() {
+    window.location.href = 'proiect.php';
+    }
+</script>
+</body>
+<footer>
+    <p class="copywrite">©copywrite. All rights reserved.</p>
+</footer>
+</html>

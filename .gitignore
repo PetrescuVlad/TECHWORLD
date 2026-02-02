@@ -1,0 +1,11 @@
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+.env
+
+# baze de date locale
+*.db
+*.sqlite
+*.sqlite3
+*.sql

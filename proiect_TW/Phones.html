@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+        }
+        .top{
+            background-color: white;
+            padding: 0.1px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .phone-card {
+            text-align: center;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 1px 4px black;
+            transition: transform 0.5s ease;
+        }
+        .phone-card:hover {
+            transform: translateY(-5px);
+        }
+        .phone-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .phone-name {
+            margin-top: 10px;
+            font-size: 16px;
+            color:black;
+        } 
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; padding: 20px 0;">Phones</h1>
+    <div class="top">
+        <h2 style="text-align: center;">BEST ON MARKET:</h2>
+    </div>
+    <div class="container">
+        <div class="phone-card">
+            <img src="s24.avif" width="500px" alt="Samsung Galaxy S24">
+            <div class="phone-name">Samsung Galaxy S24</div>
+        </div>
+        <div class="phone-card">
+            <img src="s24_plus.avif"  width="500px" alt="Samsung Galaxy S24 Plus">
+            <div class="phone-name">Samsung Galaxy S24 Plus</div>
+        </div>
+        <div class="phone-card">
+            <img src="s24ultra.avif" alt="Samsung Galaxy S24 Ultra">
+            <div class="phone-name">Samsung Galaxy S24 Ultra</div>
+        </div>
+        <div class="phone-card">
+            <img src="zflip6.avif" alt="Samsung Galaxy Z Flip 6">
+            <div class="phone-name">Samsung Galaxy Z Flip 6</div>
+        </div>
+        <div class="phone-card">
+            <img src="samsung_galaxy_z_fold6.avif" alt="Samsung Galaxy Z Fold 6">
+            <div class="phone-name">Samsung Galaxy Z Fold 6</div>
+        </div>
+        <div class="phone-card">
+            <img src="iphone_16_black.avif" alt="iPhone 16">
+            <div class="phone-name">iPhone 16</div>
+        </div>
+        <div class="phone-card">
+            <img src="iphone_16_plus.avif" alt="iPhone 16 Plus">
+            <div class="phone-name">iPhone 16 Plus</div>
+        </div>
+        <div class="phone-card">
+            <img src="iphone_16_pro.avif" alt="iPhone 16 Pro">
+            <div class="phone-name">iPhone 16 Pro</div>
+        </div>
+        <div class="phone-card">
+            <img src="iphone_16_pro_max.avif" alt="iPhone 16 Pro Max">
+            <div class="phone-name">iPhone 16 Pro Max</div>
+        </div>
+        <div class="phone-card">
+            <img src="telefon_xiaomi_14_ultra.avif" alt="Xiaomi 14 Ultra">
+            <div class="phone-name">Xiaomi 14 Ultra</div>
+        </div>
+        <div class="phone-card">
+            <img src="telefon_xiaomi_14t.avif" alt="Xiaomi 14T">
+            <div class="phone-name">Xiaomi 14T</div>
+        </div>
+        <div class="phone-card">
+            <img src="telefon_xiaomi_14t_pro.avif" alt="Xiaomi 14T Pro">
+            <div class="phone-name">Xiaomi 14T Pro</div>
+        </div>
+    </div>
+</body>
+</html>

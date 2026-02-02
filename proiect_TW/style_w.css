@@ -1,0 +1,108 @@
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url('tech.jpg'); 
+    background-size: cover; 
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.title{
+    font-family: 'Roboto'; 
+    font-size: 3rem; 
+    font-weight: bold; 
+}
+
+header{
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.login{
+    display: flex;
+    gap: 15px; 
+    align-items: center;
+}
+
+.login input{
+    padding: 10px; 
+    font-size: 1rem;
+    border-radius: 4px;
+    width: 150px; 
+}
+
+.login button{
+    padding: 10px; 
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.definition{ 
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 1px 10px black;
+}
+
+.definition h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.box{
+    background-color: #ffffff;
+    padding: 20px;
+    width: 900px;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 1px 10px black;
+    border-radius: 8px;
+}
+.box h2{
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.box p{
+    font-size: 1.1rem;
+    color: black;
+}
+
+footer{
+    color: white; 
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+#welcomeMessage {
+    font-size: 1.5em;
+    color:black;
+    background-color:white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px black;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
