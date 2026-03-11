@@ -1,36 +1,52 @@
-Proiect – Techworld
+# Techworld – Technology Web Platform
 
-Acest proiect reprezintă un website, având ca tematică atât produse din domeniul tehnologiei (laptopuri, telefoane, componente PC, periferice și gadgeturi), căt și informații și specialiști din domeniul AI.
+Techworld is a web application focused on technology products and artificial intelligence specialists.
 
-Proiectul este dezvoltat folosind HTML, CSS și PHP și include un sistem de înregistrare și afișare a datelor utilizatorilor prin intermediul unei baze de date MySQL.
+The website presents various technology categories such as laptops, smartphones, PC components, peripherals, and gadgets, along with a section dedicated to AI experts.
 
-Tehnologii utilizate
+The project also includes a user authentication system that allows users to register and log in, with data stored and retrieved from a MySQL database.
+
+---
+
+# Technologies Used
 
 - HTML5
 - CSS3
 - PHP
 - MySQL
-- VS Code (mediu de dezvoltare)
+- Visual Studio Code
 
-Funcționalități principale
+---
 
-- navigare între pagini de prezentare a produselor
-- pagini dedicate pentru laptopuri, telefoane, componente PC și periferice
-- pagina dedicată specialiștilor în AI
-- sistem de înregistrare + logare utilizatori (Sign Up/Sign in)
-- inserarea și preluarea datelor din baza de date
-- stilizare separată pentru diferite secțiuni ale site-ului
+# Main Features
 
-Rulare proiect
+- Navigation between product presentation pages
+- Dedicated sections for laptops, smartphones, PC components, and peripherals
+- Page dedicated to AI specialists
+- User authentication system (Sign Up / Sign In)
+- Database integration for storing and retrieving user data
+- Separate styling for different sections of the website
 
- Varianta 1 – Frontend
-- Deschide fișierele `.html` direct în browser  
-  sau
-- Folosește extensia **Live Server** din VS Code
+---
 
-Varianta 2 – Backend (PHP + DB)
-1. Instalează un server local (ex. XAMPP)
-2. Copiază folderul `proiect_TW` în directorul `htdocs`
-3. Creează baza de date în MySQL
-4. Importă fișierul cu baza de date
-5. Accesează proiectul din browser
+# Running the Project
+
+## Frontend Only
+
+You can open the `.html` files directly in your browser.
+
+Alternatively, you can use the **Live Server** extension in Visual Studio Code.
+
+## Backend (PHP + MySQL)
+
+1. Install a local server environment (for example **XAMPP**).
+2. Copy the project folder into the `htdocs` directory.
+3. Create a new database in MySQL.
+4. Import the provided database file.
+5. Access the project from your browser.
+
+---
+
+# Author
+
+Vlad Petrescu
