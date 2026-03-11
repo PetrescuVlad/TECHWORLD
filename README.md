@@ -46,7 +46,3 @@ Alternatively, you can use the **Live Server** extension in Visual Studio Code.
 5. Access the project from your browser.
 
 ---
-
-# Author
-
-Vlad Petrescu
